@@ -1,0 +1,372 @@
+{
+  "$schema": "https://docs.tokens.studio/themes/schemas/json/theme.json",
+  "name": "Dashboard Design System",
+  "description": "Design tokens for dashboard interface",
+  "version": "1.0.0",
+  "colors": {
+    "primary": {
+      "main": {
+        "value": "#013576",
+        "type": "color",
+        "description": "Primary brand color for buttons and interactive elements"
+      },
+      "hover": {
+        "value": "#1C73E8",
+        "type": "color",
+        "description": "Hover state for primary elements"
+      },
+      "light": {
+        "value": "#1C73E8",
+        "type": "color",
+        "description": "Light accent for highlights"
+      }
+    },
+    "background": {
+      "default": {
+        "value": "#E4E7EA",
+        "type": "color",
+        "description": "Default page background"
+      },
+      "surface": {
+        "value": "#FFFFFF",
+        "type": "color",
+        "description": "Card and surface backgrounds"
+      }
+    },
+    "text": {
+      "primary": {
+        "value": "#1A1A1A",
+        "type": "color",
+        "description": "Primary text color"
+      },
+      "secondary": {
+        "value": "#6C6C6C",
+        "type": "color",
+        "description": "Secondary text color for less emphasis"
+      }
+    },
+    "border": {
+      "default": {
+        "value": "#D0D5DA",
+        "type": "color",
+        "description": "Default border color"
+      }
+    },
+    "state": {
+      "success": {
+        "value": "#32C665",
+        "type": "color",
+        "description": "Success state color"
+      },
+      "error": {
+        "value": "#E53935",
+        "type": "color",
+        "description": "Error state color"
+      },
+      "warning": {
+        "value": "#FFB300",
+        "type": "color",
+        "description": "Warning state color"
+      },
+      "info": {
+        "value": "#1E88E5",
+        "type": "color",
+        "description": "Info state color"
+      }
+    }
+  },
+  "spacing": {
+    "xs": {
+      "value": "4px",
+      "type": "spacing",
+      "description": "Extra small spacing - icon gaps"
+    },
+    "sm": {
+      "value": "8px",
+      "type": "spacing",
+      "description": "Small spacing - compact layouts"
+    },
+    "md": {
+      "value": "12px",
+      "type": "spacing",
+      "description": "Medium spacing"
+    },
+    "base": {
+      "value": "16px",
+      "type": "spacing",
+      "description": "Base spacing unit"
+    },
+    "lg": {
+      "value": "24px",
+      "type": "spacing",
+      "description": "Large spacing - section gaps"
+    },
+    "xl": {
+      "value": "32px",
+      "type": "spacing",
+      "description": "Extra large spacing"
+    },
+    "2xl": {
+      "value": "40px",
+      "type": "spacing",
+      "description": "2X large spacing"
+    },
+    "3xl": {
+      "value": "48px",
+      "type": "spacing",
+      "description": "3X large spacing"
+    },
+    "4xl": {
+      "value": "64px",
+      "type": "spacing",
+      "description": "4X large spacing - major sections"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "base": {
+        "value": "Nunito Sans",
+        "type": "fontFamily"
+      }
+    },
+    "fontSize": {
+      "h1": {
+        "value": "32px",
+        "type": "fontSize",
+        "description": "Heading 1 - Page titles"
+      },
+      "h2": {
+        "value": "24px",
+        "type": "fontSize",
+        "description": "Heading 2 - Section headings"
+      },
+      "h3": {
+        "value": "20px",
+        "type": "fontSize",
+        "description": "Heading 3 - Subsection headings"
+      },
+      "bodyLarge": {
+        "value": "16px",
+        "type": "fontSize",
+        "description": "Large body text"
+      },
+      "body": {
+        "value": "14px",
+        "type": "fontSize",
+        "description": "Default body text"
+      },
+      "caption": {
+        "value": "12px",
+        "type": "fontSize",
+        "description": "Small text - labels, captions"
+      }
+    },
+    "lineHeight": {
+      "h1": {
+        "value": "40px",
+        "type": "lineHeight"
+      },
+      "h2": {
+        "value": "32px",
+        "type": "lineHeight"
+      },
+      "h3": {
+        "value": "28px",
+        "type": "lineHeight"
+      },
+      "bodyLarge": {
+        "value": "24px",
+        "type": "lineHeight"
+      },
+      "body": {
+        "value": "20px",
+        "type": "lineHeight"
+      },
+      "caption": {
+        "value": "16px",
+        "type": "lineHeight"
+      }
+    },
+    "fontWeight": {
+      "regular": {
+        "value": "400",
+        "type": "fontWeight"
+      },
+      "medium": {
+        "value": "500",
+        "type": "fontWeight"
+      },
+      "semibold": {
+        "value": "600",
+        "type": "fontWeight"
+      },
+      "bold": {
+        "value": "700",
+        "type": "fontWeight"
+      }
+    }
+  },
+  "borderRadius": {
+    "sm": {
+      "value": "4px",
+      "type": "borderRadius",
+      "description": "Small radius - badges, tags"
+    },
+    "md": {
+      "value": "8px",
+      "type": "borderRadius",
+      "description": "Medium radius - buttons, inputs"
+    },
+    "lg": {
+      "value": "12px",
+      "type": "borderRadius",
+      "description": "Large radius - cards, modals"
+    },
+    "full": {
+      "value": "9999px",
+      "type": "borderRadius",
+      "description": "Fully rounded - avatars, pills"
+    }
+  },
+  "shadows": {
+    "level1": {
+      "value": {
+        "x": "0",
+        "y": "1",
+        "blur": "3",
+        "spread": "0",
+        "color": "rgba(0, 0, 0, 0.1)"
+      },
+      "type": "boxShadow",
+      "description": "Subtle shadow for cards"
+    },
+    "level2": {
+      "value": {
+        "x": "0",
+        "y": "4",
+        "blur": "8",
+        "spread": "0",
+        "color": "rgba(0, 0, 0, 0.12)"
+      },
+      "type": "boxShadow",
+      "description": "Medium shadow for elevated elements"
+    },
+    "level3": {
+      "value": {
+        "x": "0",
+        "y": "8",
+        "blur": "16",
+        "spread": "0",
+        "color": "rgba(0, 0, 0, 0.16)"
+      },
+      "type": "boxShadow",
+      "description": "Strong shadow for modals and overlays"
+    }
+  },
+  "components": {
+    "button": {
+      "height": {
+        "small": {
+          "value": "32px",
+          "type": "sizing"
+        },
+        "medium": {
+          "value": "40px",
+          "type": "sizing"
+        },
+        "large": {
+          "value": "48px",
+          "type": "sizing"
+        }
+      },
+      "padding": {
+        "small": {
+          "value": "12px 16px",
+          "type": "spacing"
+        },
+        "medium": {
+          "value": "14px 18px",
+          "type": "spacing"
+        },
+        "large": {
+          "value": "16px 20px",
+          "type": "spacing"
+        }
+      }
+    },
+    "input": {
+      "height": {
+        "value": "40px",
+        "type": "sizing"
+      },
+      "padding": {
+        "value": "12px",
+        "type": "spacing"
+      },
+      "borderWidth": {
+        "value": "1px",
+        "type": "borderWidth"
+      }
+    },
+    "card": {
+      "padding": {
+        "value": "24px",
+        "type": "spacing"
+      },
+      "gap": {
+        "value": "16px",
+        "type": "spacing"
+      }
+    },
+    "navigation": {
+      "sidebarWidthExpanded": {
+        "value": "240px",
+        "type": "sizing"
+      },
+      "sidebarWidthCollapsed": {
+        "value": "72px",
+        "type": "sizing"
+      },
+      "itemHeight": {
+        "value": "40px",
+        "type": "sizing"
+      },
+      "topBarHeight": {
+        "value": "64px",
+        "type": "sizing"
+      }
+    }
+  },
+  "grid": {
+    "columns": {
+      "value": "12",
+      "type": "number"
+    },
+    "gutter": {
+      "value": "24px",
+      "type": "spacing"
+    },
+    "maxWidth": {
+      "value": "1200px",
+      "type": "sizing"
+    },
+    "margin": {
+      "1280": {
+        "value": "40px",
+        "type": "spacing"
+      },
+      "1440": {
+        "value": "80px",
+        "type": "spacing"
+      },
+      "1536": {
+        "value": "96px",
+        "type": "spacing"
+      },
+      "1920": {
+        "value": "160px",
+        "type": "spacing"
+      }
+    }
+  }
+}
