@@ -1,0 +1,237 @@
+/**
+ * Design System CSS Variables
+ * Based on Figma Dashboard Template specifications
+ */
+
+:root {
+  /* ============================================
+     BREAKPOINTS
+     ============================================ */
+  --breakpoint-sm: 1280px;
+  --breakpoint-md: 1440px;
+  --breakpoint-lg: 1536px;
+  --breakpoint-xl: 1920px;
+
+  /* ============================================
+     SPACING SCALE
+     ============================================ */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-base: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 40px;
+  --spacing-3xl: 48px;
+  --spacing-4xl: 64px;
+
+  /* ============================================
+     COLORS - PRIMARY
+     ============================================ */
+  --color-primary: #013576;
+  --color-primary-hover: #1C73E8;
+  --color-primary-light: #1C73E8;
+
+  /* ============================================
+     COLORS - SECONDARY
+     ============================================ */
+  --color-secondary: #6C6C6C;
+
+  /* ============================================
+     COLORS - BACKGROUND
+     ============================================ */
+  --color-bg-default: #E4E7EA;
+  --color-bg-surface: #FFFFFF;
+
+  /* ============================================
+     COLORS - BORDER
+     ============================================ */
+  --color-border: #D0D5DA;
+
+  /* ============================================
+     COLORS - TEXT
+     ============================================ */
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #6C6C6C;
+
+  /* ============================================
+     COLORS - STATE
+     ============================================ */
+  --color-success: #32C665;
+  --color-error: #E53935;
+  --color-warning: #FFB300;
+  --color-info: #1E88E5;
+
+  /* ============================================
+     TYPOGRAPHY - FONT FAMILY
+     ============================================ */
+  --font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* ============================================
+     TYPOGRAPHY - FONT SIZES
+     ============================================ */
+  --font-size-h1: 32px;
+  --font-size-h2: 24px;
+  --font-size-h3: 20px;
+  --font-size-body-large: 16px;
+  --font-size-body: 14px;
+  --font-size-caption: 12px;
+
+  /* ============================================
+     TYPOGRAPHY - LINE HEIGHTS
+     ============================================ */
+  --line-height-h1: 40px;
+  --line-height-h2: 32px;
+  --line-height-h3: 28px;
+  --line-height-body-large: 24px;
+  --line-height-body: 20px;
+  --line-height-caption: 16px;
+
+  /* ============================================
+     BORDER RADIUS
+     ============================================ */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* ============================================
+     SHADOWS
+     ============================================ */
+  --shadow-level-1: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-level-2: 0 4px 8px rgba(0, 0, 0, 0.12);
+  --shadow-level-3: 0 8px 16px rgba(0, 0, 0, 0.16);
+
+  /* ============================================
+     GRID
+     ============================================ */
+  --grid-max-width: 1200px;
+  --grid-columns: 12;
+  --grid-gutter: 24px;
+  --grid-margin: 40px; /* Default, changes with breakpoints */
+
+  /* ============================================
+     COMPONENT SIZES - BUTTONS
+     ============================================ */
+  --button-height-sm: 32px;
+  --button-height-md: 40px;
+  --button-height-lg: 48px;
+
+  --button-padding-sm: 12px 16px;
+  --button-padding-md: 14px 18px;
+  --button-padding-lg: 16px 20px;
+
+  /* ============================================
+     COMPONENT SIZES - INPUTS
+     ============================================ */
+  --input-height: 40px;
+  --input-padding: 0 12px;
+  --input-border-width: 1px;
+
+  /* ============================================
+     COMPONENT SIZES - NAVIGATION
+     ============================================ */
+  --nav-sidebar-width-expanded: 240px;
+  --nav-sidebar-width-collapsed: 72px;
+  --nav-item-height: 40px;
+  --nav-icon-size: 20px;
+
+  --topbar-height: 64px;
+
+  /* ============================================
+     COMPONENT SIZES - CARDS
+     ============================================ */
+  --card-padding: 24px;
+  --card-gap: 16px;
+  --card-radius: 12px;
+
+  --card-width-sm: 300px;
+  --card-width-sm-max: 360px;
+  --card-width-md: 480px;
+  --card-width-md-max: 600px;
+  --card-width-lg: 800px;
+  --card-width-lg-max: 900px;
+
+  /* ============================================
+     COMPONENT SIZES - MODALS
+     ============================================ */
+  --modal-width-sm: 400px;
+  --modal-width-md: 600px;
+  --modal-width-lg: 800px;
+
+  /* ============================================
+     COMPONENT SIZES - ICONS
+     ============================================ */
+  --icon-size-sm: 16px;
+  --icon-size-md: 20px;
+  --icon-size-lg: 24px;
+
+  /* ============================================
+     Z-INDEX SCALE
+     ============================================ */
+  --z-index-base: 1;
+  --z-index-dropdown: 100;
+  --z-index-sticky: 200;
+  --z-index-fixed: 300;
+  --z-index-modal-backdrop: 400;
+  --z-index-modal: 500;
+  --z-index-popover: 600;
+  --z-index-tooltip: 700;
+
+  /* ============================================
+     TRANSITIONS
+     ============================================ */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+}
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS - GRID MARGINS
+   ============================================ */
+
+@media (min-width: 1280px) {
+  :root {
+    --grid-margin: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --grid-margin: 80px;
+  }
+}
+
+@media (min-width: 1536px) {
+  :root {
+    --grid-margin: 96px;
+  }
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --grid-margin: 160px;
+  }
+}
+
+/* ============================================
+   DARK MODE OVERRIDES (Optional)
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-default: #1A1A1A;
+    --color-bg-surface: #2D2D2D;
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #B0B0B0;
+    --color-border: #404040;
+  }
+}
+
+/* Can also use data attribute for manual toggle */
+[data-theme="dark"] {
+  --color-bg-default: #1A1A1A;
+  --color-bg-surface: #2D2D2D;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #B0B0B0;
+  --color-border: #404040;
+}
